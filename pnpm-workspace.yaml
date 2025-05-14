@@ -1,6 +1,5 @@
 onlyBuiltDependencies:
-  - '@tailwindcss/oxide'
-  - esbuild
-
-ignoredBuiltDependencies:
   - '@clerk/shared'
+  - '@tailwindcss/oxide'
+  - sharp
+  - unrs-resolver
