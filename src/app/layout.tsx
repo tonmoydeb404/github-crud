@@ -46,10 +46,13 @@ export default function RootLayout({
             </Button>
           </SignedOut>
           <SignedIn>
-            <div className="mb-4 border px-5 py-2 rounded-2xl">
-              <UserButton showName />
+            <div className="max-w-xl w-full">
+              <div className="h-20">
+                <UserButton />
+              </div>
+
+              {children}
             </div>
-            <div className="max-w-xl">{children}</div>
           </SignedIn>
         </body>
       </html>
