@@ -35,7 +35,7 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en">
         <body
-          className={`${geistSans.variable} ${geistMono.variable} antialiased flex w-full h-screen flex-col items-center justify-center`}
+          className={`${geistSans.variable} ${geistMono.variable} antialiased flex w-full min-h-screen flex-col items-center justify-center py-10`}
         >
           <SignedOut>
             <Button asChild className="mb-3 w-40" size={"lg"}>
@@ -49,7 +49,7 @@ export default function RootLayout({
             <div className="mb-4 border px-5 py-2 rounded-2xl">
               <UserButton showName />
             </div>
-            {children}
+            <div className="max-w-xl">{children}</div>
           </SignedIn>
         </body>
       </html>

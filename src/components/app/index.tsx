@@ -1,7 +1,15 @@
+"use client";
+
+import RepoList from "./repositories";
+
 type Props = {};
 
 const AppView = (props: Props) => {
-  return <div>AppView</div>;
+  return (
+    <div>
+      <RepoList />
+    </div>
+  );
 };
 
 export default AppView;
